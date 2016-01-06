@@ -1,0 +1,78 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+		<div class="container">
+		<f:if condition="{projects}">
+			<f:for each="{projects}" as="project" iteration="iteration">
+		        	
+		      <f:if condition='<v:math.modulo a="{iteration.index}" b="5" />==0'>
+			      	<f:then>
+			      			      				       
+				        <div class="col-xs-12 work-box">
+			        </f:then>
+			        <f:else>	
+
+			        	 <div class="col-sm-6 col-sm-12 work-box">
+			        </f:else>
+		        </f:if>
+				
+		          <f:link.action pageUid="{settings.flexform.main.projectdetail}" controller="Project" action="show" arguments="{project : project.uid}" noCacheHash="1">
+		            <f:for each="{project.media.banner}" as="pic" iteration="iteration2">
+
+							<f:if condition="{iteration2.index} == 0">
+		              <f:image src="{pic.identifier}" class="img-responsive" width="1165c" height="539c"></f:image>
+		                </f:if>
+		                </f:for>
+		            <div class="work-address text-center text-lowercase">
+		              <span class="work-large">{project.content_header}</span>
+		              <span class="work-small">{project.content_subheader}</span>
+		            </div>
+		            <div class="work-hidden text-center text-lowercase">
+		              <div class="work-hidden-img">
+
+		              <f:for each="{project.media.bannerLogo}" as="pic" iteration="iteration2">
+
+							<f:if condition="{iteration2.index} == 0">
+		              <f:image src="{pic.identifier}" class="img-responsive" width="338c" height="121c"></f:image>
+		                </f:if>
+		                </f:for>
+		              </div>
+		            </div>   
+		          </f:link.action>
+ 				
+ 				<f:if condition='<v:math.modulo a="{iteration.index}" b="3" />==0'>
+			      	<f:then>
+
+		      				</div>
+			        </f:then>
+			        <f:else>		        	
+			       		 
+			        	 </div>
+			        </f:else>	
+		        </f:if>
+
+		        
+		      </f:for>
+		      </f:if>
+		      		      <div class="row"><div class="text-center clearfix"><a class="btn" id="more-project" href="#">mehr über uns</a></div></div>
+
+
+		</div>
+
+
+</f:section>

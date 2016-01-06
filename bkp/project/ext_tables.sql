@@ -1,0 +1,70 @@
+#
+# Table structure for table 'tx_project_domain_model_project'
+#
+CREATE TABLE tx_project_domain_model_project (
+
+	uid int(11) NOT NULL auto_increment,
+	pid int(11) DEFAULT '0' NOT NULL,
+
+	banner int(11) unsigned NOT NULL default '0',
+	banner_logo int(11) unsigned NOT NULL default '0',
+	content_header varchar(255) DEFAULT '' NOT NULL,
+	content_subheader varchar(255) DEFAULT '' NOT NULL,
+	content_description text NOT NULL,
+	content_description1 text NOT NULL,
+	content_description2 text NOT NULL,
+	content_bullet_list text NOT NULL,
+	content1_header varchar(255) DEFAULT '' NOT NULL,
+	content1_subheader varchar(255) DEFAULT '' NOT NULL,
+	content1_image int(11) unsigned NOT NULL default '0',
+	content2_header varchar(255) DEFAULT '' NOT NULL,
+	content2_subheader varchar(255) DEFAULT '' NOT NULL,
+	content2_image int(11) unsigned NOT NULL default '0',
+	content3_header varchar(255) DEFAULT '' NOT NULL,
+	content3_subheader varchar(255) DEFAULT '' NOT NULL,
+	content_slider int(11) unsigned NOT NULL default '0',
+	slider_link varchar(255) DEFAULT '' NOT NULL,
+	zitat_header varchar(255) DEFAULT '' NOT NULL,
+	zitat_subheader varchar(255) DEFAULT '' NOT NULL,
+	zitat_descritpion text NOT NULL,
+	zitat_image int(11) unsigned NOT NULL default '0',
+	gallery_header varchar(255) DEFAULT '' NOT NULL,
+	gallery_subheader varchar(255) DEFAULT '' NOT NULL,
+	gallery_images int(11) unsigned NOT NULL default '0',
+	contact_subheader varchar(255) DEFAULT '' NOT NULL,
+	gallery_link varchar(255) DEFAULT '' NOT NULL,
+	contact_header varchar(255) DEFAULT '' NOT NULL,
+	contact_name varchar(255) DEFAULT '' NOT NULL,
+	contact_position varchar(255) DEFAULT '' NOT NULL,
+	contact_telephone varchar(255) DEFAULT '' NOT NULL,
+	contact_email varchar(255) DEFAULT '' NOT NULL,
+	contact_image int(11) unsigned NOT NULL default '0',
+
+	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
+	crdate int(11) unsigned DEFAULT '0' NOT NULL,
+	cruser_id int(11) unsigned DEFAULT '0' NOT NULL,
+	deleted tinyint(4) unsigned DEFAULT '0' NOT NULL,
+	hidden tinyint(4) unsigned DEFAULT '0' NOT NULL,
+	starttime int(11) unsigned DEFAULT '0' NOT NULL,
+	endtime int(11) unsigned DEFAULT '0' NOT NULL,
+
+	t3ver_oid int(11) DEFAULT '0' NOT NULL,
+	t3ver_id int(11) DEFAULT '0' NOT NULL,
+	t3ver_wsid int(11) DEFAULT '0' NOT NULL,
+	t3ver_label varchar(255) DEFAULT '' NOT NULL,
+	t3ver_state tinyint(4) DEFAULT '0' NOT NULL,
+	t3ver_stage int(11) DEFAULT '0' NOT NULL,
+	t3ver_count int(11) DEFAULT '0' NOT NULL,
+	t3ver_tstamp int(11) DEFAULT '0' NOT NULL,
+	t3ver_move_id int(11) DEFAULT '0' NOT NULL,
+
+	sys_language_uid int(11) DEFAULT '0' NOT NULL,
+	l10n_parent int(11) DEFAULT '0' NOT NULL,
+	l10n_diffsource mediumblob,
+
+	PRIMARY KEY (uid),
+	KEY parent (pid),
+	KEY t3ver_oid (t3ver_oid,t3ver_wsid),
+ KEY language (l10n_parent,sys_language_uid)
+
+);

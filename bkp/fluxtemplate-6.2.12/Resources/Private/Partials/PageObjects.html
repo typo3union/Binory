@@ -1,0 +1,54 @@
+{namespace v=Tx_Vhs_ViewHelpers}
+<f:layout name="Page" />
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:v="http://fedext.net/ns/vhs/ViewHelpers"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+  <f:section name="Header">
+      
+       <nav class="navbar navbar-default start-fix">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="text-uppercase">men&uuml;</span>
+                    </button>
+                    <f:link.page pageUid="1" class="navbar-brand"><img src="{f:cObject(typoscriptObjectPath: 'lib.mainLogo')}" alt="1" /></f:link.page>
+                </div>
+                <f:cObject typoscriptObjectPath="menu.lang_menu" />
+               
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="main-menu">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="text-uppercase">men&uuml;</span>
+                            <span class="ak"></span>
+                        </button>
+                    </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                     <f:cObject typoscriptObjectPath="menu.main_menu" />
+                </div><!-- /.navbar-collapse -->
+            </div>
+            </nav>   
+   </f:section>
+    
+  <f:section name="Footer">
+   
+       <div class="border"></div>
+        <div class="container">  
+        	<div class="row">   
+            	<div class="footer clearfix"> 
+                	<div class="col-md-5 col-sm-5 col-xs-12 pdg-nn">
+                    	<span><f:cObject typoscriptObjectPath="content.copyRightText" /></span>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-12 text-center pdg-nn">
+                        <f:link.page pageUid="1">
+                    	<img src="{f:cObject(typoscriptObjectPath: 'lib.footerlogo')}" alt="a" />
+                         </f:link.page>
+                    </div>
+                    <div class="col-md-5 col-sm-5 col-xs-12 pdg-nn" >
+                    	 <f:cObject typoscriptObjectPath="menu.footerMenu" />
+                    </div> 
+                </div>
+            </div>
+        </div>
+      
+  </f:section>
+</div>

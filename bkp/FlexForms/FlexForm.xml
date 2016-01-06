@@ -1,0 +1,58 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<main>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Main Settings</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<switchableControllerActions>
+						<TCEforms>
+						<label>Display Mode</label>
+						<config>
+							<type>select</type>
+							<items>
+								<numIndex index="1">
+									<numIndex index="0">Register People List</numIndex>
+									<numIndex index="1">Register->list</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">Register People Detail</numIndex>
+									<numIndex index="1">Register->show</numIndex>
+								</numIndex>
+								
+							</items>
+						</config>
+						</TCEforms>
+					</switchableControllerActions>
+					<!-- single news -->
+									
+					<settings.singleView>
+						<TCEforms>
+							<label>Detaild pageID</label>
+							
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+                                                                
+							</config>
+						</TCEforms>
+					</settings.singleView>	
+												
+						
+				</el>
+			</ROOT>
+		</main>
+
+		
+	</sheets>
+</T3DataStructure>

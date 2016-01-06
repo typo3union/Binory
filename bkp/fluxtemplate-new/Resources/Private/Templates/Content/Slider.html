@@ -1,0 +1,37 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+  <f:layout name="Content" />
+  <f:section name="Configuration">
+    <flux:form id="slider" label="Slider" description="Slider Element" icon="" options="{Fluidcontent: {sorting: 102},group: 'Custom elements'}">
+      <flux:form.sheet name="options" label="Options">
+
+        <flux:form.section name="slider" label="slider">
+          <flux:form.object name="Slider" label="Add New Slide">
+                <flux:field.file name="picture" uploadFolder="uploads/slider_images/" label="Upload Logo Image" allowed="jpg, jpeg, png, gif"/>
+                <flux:field.input name="Text" label="Alt"/>
+          </flux:form.object>
+        </flux:form.section>
+		
+      </flux:form.sheet>
+    </flux:form>
+  </f:section>
+  <f:section name="Main"> 
+
+        <section class="banner">
+          <div id="home-slider" class="owl-carousel owl-theme home-slider">
+            <f:if condition="{slider}">
+                <f:for each="{slider}" as="sliders" iteration="iteration">
+                  <f:if condition="{sliders.Slider.picture}">
+                   <div class="item">
+                    <f:image src="uploads/slider_images/{sliders.Slider.picture}" alt="{sliders.Slider.Text}" class="img-responsive"/>
+                  </div>
+                  </f:if>
+              </f:for>
+              </f:if>
+          </div>
+        </section>
+
+  </f:section>
+</div>

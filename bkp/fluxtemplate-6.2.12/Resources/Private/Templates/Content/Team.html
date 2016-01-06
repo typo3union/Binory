@@ -1,0 +1,69 @@
+{namespace v=Tx_Vhs_ViewHelpers}
+{namespace flux=FluidTYPO3\Flux\ViewHelpers}
+<f:layout name="Content" />
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:flux="http://fedext.net/ns/flux/ViewHelpers"
+     xmlns:v="http://fedext.net/ns/vhs/ViewHelpers"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+  <f:section name="Configuration">
+    <v:var.set name="locallangPath" value="{v:var.typoscript(path: 'lib.locallangPath.value')}" />
+    <flux:form id="team" label="team" description="Team Element" icon="" options="{Fluidcontent: {sorting: 108},group: 'Custom Elements'}">
+        <flux:form.sheet name="options" label="Options">
+            <flux:form.section name="team" label="Team Element">
+             <flux:form.object name="Team" label="Add New Slide">
+                    
+                    <flux:field.file name="picture" uploadFolder="uploads/slider_image/" label="Upload Image" allowed="jpg, jpeg, png, gif"  showThumbnails="1" />
+                    <flux:field.file name="picture_hover" uploadFolder="uploads/slider_image/" label="Upload Hover Image" allowed="jpg, jpeg, png, gif"  showThumbnails="1" />
+                    <flux:field.input name="name" label="Name" />
+                    <flux:field.input name="desc" label="Designation" />
+                    <flux:field.input name="hovertext" label="Hover Text" />
+                    <flux:field.input name="link" label="Link">
+                    <flux:wizard.link />
+                   </flux:field.input>
+             </flux:form.object>
+        </flux:form.section>
+           
+        </flux:form.sheet>
+    </flux:form>
+  </f:section>
+  <f:section name="Main">
+      
+      <div class="team clearfix">
+            <div class="owl-carousel">
+             <f:if condition="{team}">
+             <f:for each="{team}" as="teams" iteration="iteration">   
+		<div class="item">
+                    <div class="col text-center text-uppercase">
+                        <f:link.page pageUid="{teams.Team.link}">
+                            <div class="default">
+                                <div class="default-inner">
+                                    <f:if condition="{teams.Team.picture}">
+                                     <f:image src="uploads/slider_image/{teams.Team.picture}" class="img-responsive" width="226c" height="226c" />
+                                    </f:if>
+                                        <div class="item-hover">
+                                            <div class="border"></div>
+                                            <div class="img-width">
+                                                 <f:if condition="{teams.Team.picture_hover}">
+                                                <f:image src="uploads/slider_image/{teams.Team.picture_hover}" class="img-responsive" width="60c" height="63c" />
+                                                 </f:if>
+                                            </div>
+                                            <div class="desc">
+                                                <span class="small-desc">{teams.Team.hovertext}</span>
+                                                <span class="small-desc">{teams.Team.name}</span>
+                                            </div>
+                                        </div>
+                                </div>
+                            <span class="name">{teams.Team.name}</span>
+                            <span class="desc">{teams.Team.desc}</span>
+                         </div>
+                        </f:link.page>
+                    </div>
+                </div>
+           
+            </f:for>
+            </f:if>
+                 </div>
+      </div>
+    
+ </f:section>
+</div>

@@ -1,0 +1,30 @@
+{namespace v=Tx_Vhs_ViewHelpers}
+{namespace flux=FluidTYPO3\Flux\ViewHelpers}
+<f:layout name="Content" />
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:flux="http://fedext.net/ns/flux/ViewHelpers"
+     xmlns:v="http://fedext.net/ns/vhs/ViewHelpers"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+  <f:section name="Configuration">
+    <v:var.set name="locallangPath" value="{v:var.typoscript(path: 'lib.locallangPath.value')}" />
+    <flux:form id="link" label="Link Page" description="Link Page Element" icon="" options="{Fluidcontent: {sorting: 108},group: 'Custom elements'}">
+      <flux:form.sheet name="options" label="Options">
+           <flux:field.input name="Text" label="Text"/>
+           <flux:field.input name="hovertext" label="Hover Text"/>
+           <flux:field.input name="link" label="Link">
+             <flux:wizard.link />
+           </flux:field.input>
+      </flux:form.sheet>
+    </flux:form>
+  </f:section>
+  <f:section name="Main">
+      
+        <div class="redirect  ">
+        <f:link.page pageUid="{link}" class="btn btn-default text-uppercase">
+            <span class="default">{Text}</span><span class="hov">{hovertext}</span></f:link.page>
+                    <div class="inline"></div> 
+        </div>
+      
+   
+  </f:section>
+</div>

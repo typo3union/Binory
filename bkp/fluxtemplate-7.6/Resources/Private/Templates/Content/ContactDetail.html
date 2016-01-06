@@ -1,0 +1,58 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+  <f:layout name="Content" />
+  <f:section name="Configuration">
+    <flux:form id="contact" label="Contact" description="Contact detail Element" icon="" options="{Fluidcontent: {sorting: 107},group: 'Custom elements'}">
+      <flux:form.sheet name="options" label="Options">
+        
+                <flux:field.input name="title1" label="Title"/>
+                <flux:field.text name="content" label="Contact Detail 1" enableRichText="1"></flux:field.text>
+                <flux:field.input name="title2" label="Title"/>
+                <flux:field.text name="content2" label="Contact Detail 2" enableRichText="1"></flux:field.text>
+                 <flux:field.text name="content3" label="Contact Contenr" enableRichText="1"></flux:field.text>
+                  <flux:form.section name="contact" label="FixTop Slider">
+          <flux:form.object name="Contact" label="Add New Slide">
+                <flux:field.select name="select" label="Select Image Type"  items="{facebook: 'facebook', google-plus: 'google-plus', twitter:'Twitter'}"></flux:field.select>
+                        <flux:field.input name="link" label="Link">
+                       <flux:wizard.link />
+                     </flux:field.input>
+                    </flux:form.object>
+        </flux:form.section>
+
+           
+      </flux:form.sheet>
+    </flux:form>
+  </f:section>
+  <f:section name="Main"> 
+                 <div class="row">
+                      <div class="col-md-6">
+                          <div class="section-title-wr">
+                              <h3 class="section-title left"><span>{title1}</span></h3>
+                          </div>
+                          <div class="contact-info">
+                               <f:format.html>{content}</f:format.html>
+                          </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="section-title-wr">
+                                  <h3 class="section-title left"><span>{title2}</span></h3>
+                              </div>
+                              <div class="contact-info">
+                                 <f:format.html>{content2}</f:format.html>
+                              </div>
+                          </div>
+                      </div>
+
+                        <f:format.html>{content3}</f:format.html>
+                        <div class="social-media">
+                       <f:for each="{contact}" as="contacts" iteration="iteration">
+                        <f:link.page pageUid="{contacts.Contact.link}"><i class="fa fa-{contacts.Contact.select}  <f:if condition='{contacts.Contact.select} == "google-plus"'><f:then>google</f:then><f:else>{contacts.Contact.select}</f:else></f:if>"></i></f:link.page>
+                     </f:for>
+                      
+                        </div>
+                         
+                    
+</f:section>
+</div>

@@ -1,0 +1,43 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+  <f:layout name="Content" />
+  <f:section name="Configuration">
+    <flux:form id="socialbutton" label="Social Button" description="Social Button Element" icon="" options="{Fluidcontent: {sorting: 101},group: 'Custom elements'}">
+      <flux:form.sheet name="options" label="Options">
+			
+	  <flux:field.input name="link" label="Link For Facebook">
+            <flux:wizard.link />
+        </flux:field.input>
+        <flux:field.input name="link1" label="Link For google">
+            <flux:wizard.link />
+        </flux:field.input>
+        <flux:field.input name="link2" label="Link For twitter">
+            <flux:wizard.link />
+        </flux:field.input>
+        <flux:field.input name="link3" label="Link For youtube">
+            <flux:wizard.link />
+        </flux:field.input>
+
+        <!-- Second Address End -->
+      </flux:form.sheet>
+    </flux:form>
+  </f:section>
+  <f:section name="Main">
+    	<ul class="list-unstyled list-inline text-lowercase">
+					<f:if condition="{link}">
+						<li><f:link.page pageUid="{link}" class="facebook" target="_blank">Facebook</f:link.page></li>
+			    	</f:if>
+			    	<f:if condition="{link1}">
+			    		<li><f:link.page pageUid="{link1}" class="google" target="_blank">Google</f:link.page></li>
+			    	</f:if>
+			    	<f:if condition="{link2}">
+			    		<li><f:link.page pageUid="{link2}" class="twitter" target="_blank">Twitter</f:link.page></li>
+			    	</f:if>
+			    	<f:if condition="{link3}">
+			    		<li><f:link.page pageUid="{link3}" class="youtube" target="_blank">Youtube</f:link.page></li>
+		        	</f:if>
+              </ul>
+  </f:section>
+</div>

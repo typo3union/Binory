@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-12-31T07:33:02Z" product-name="project">
+		<header/>
+		<body>
+			<trans-unit id="tx_project_domain_model_project">
+				<source>Project</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.banner">
+				<source>Banner</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.banner_logo">
+				<source>Banner Logo</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.content_header">
+				<source>Content Header</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.content_subheader">
+				<source>Content Subheader</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.content_description">
+				<source>Content Description</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.content_description1">
+				<source>Content Description1</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.content_description2">
+				<source>Content Description2</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.content_bullet_list">
+				<source>Content Bullet List</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.content1_header">
+				<source>Content1 Header</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.content1_subheader">
+				<source>Content1 Subheader</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.content1_image">
+				<source>Content1 Image</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.content2_header">
+				<source>Content2 Header</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.content2_subheader">
+				<source>Content2 Subheader</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.content2_image">
+				<source>Content2 Image</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.content3_header">
+				<source>Content3 Header</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.content3_subheader">
+				<source>Content3 Subheader</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.content_slider">
+				<source>Content Slider</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.slider_link">
+				<source>Slider Link</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.zitat_header">
+				<source>Zitat Header</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.zitat_subheader">
+				<source>Zitat Subheader</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.zitat_descritpion">
+				<source>Zitat Descritpion</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.zitat_image">
+				<source>Zitat Image</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.gallery_header">
+				<source>Gallery Header</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.gallery_subheader">
+				<source>Gallery Subheader</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.gallery_images">
+				<source>Gallery Images</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.contact_subheader">
+				<source>Contact Subheader</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.gallery_link">
+				<source>Gallery Link</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.contact_header">
+				<source>Contact Header</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.contact_name">
+				<source>Contact Name</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.contact_position">
+				<source>Contact Position</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.contact_telephone">
+				<source>Contact Telephone</source>
+			</trans-unit>
+			<trans-unit id="tx_project_domain_model_project.contact_email">
+				<source>Contact Email</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

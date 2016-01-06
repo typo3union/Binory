@@ -1,0 +1,31 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+
+<f:if condition="{videolist}">
+<f:then>
+<div class="module-video">
+	<figure class="video-img">
+		<f:if condition="{videolist.imageReference}">
+			<f:then>
+				<f:image src="{videolist.imageReference}" alt="{videolist.alttag}" treatIdAsReference="1" class="img-responsive" width="481c" height="541c" />
+			</f:then>
+			<f:else>
+				<f:image src="EXT:bridge_videos/Resources/Public/Images/dummy_image.jpg" alt="{videolist.name}" class="img-responsive" width="481c" height="541c" />
+			</f:else>
+		</f:if>
+	</figure>
+	<article class="video-play">
+        <figure>
+            <h2>
+               <f:if condition="{videolist.upload_video}">
+					<f:then>
+						<a href="{videolist.upload_video}" class="html5lightbox">
+							<f:image src="EXT:bridge_videos/Resources/Public/Images/video-play.png" alt="{videolist.alttag}" additionalAttributes="{class: 'img-responsive'}" width="124c" height="124c" />
+						</a>
+					</f:then>					
+				</f:if>
+            </h2>
+        </figure>
+    </article>
+</div>
+</f:then>
+</f:if>
