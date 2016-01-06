@@ -1,0 +1,62 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+  <f:layout name="Content" />
+  <f:section name="Configuration">
+    <flux:form id="Aboutslider" label="About Slider" description="About Slider Element" icon="" options="{Fluidcontent: {sorting: 105},group: 'Custom elements'}">
+      <flux:form.sheet name="options" label="Options">
+       <flux:field.select name="tg1" label="Background"  items="{1: 'pink-bg', 2: 'white-bg',3:'gray-bg'}"></flux:field.select>
+      <flux:field.input name="Text" label="Title"/>
+            <flux:field.input name="Text2" label="Title"/>
+        <flux:form.section name="aslider" label="slider">
+          <flux:form.object name="ASlider" label="Add New Slide">
+                <flux:field.file name="picture" uploadFolder="uploads/slider_images/" label="Upload Logo Image" allowed="jpg, jpeg, png, gif"/>
+                <flux:field.input name="Text3" label="Main text"/>
+                <flux:field.input name="Text4" label="Sub text"/>
+                <flux:field.input name="Text5" label="Random Number"/>
+          </flux:form.object>
+        </flux:form.section>
+		
+      </flux:form.sheet>
+    </flux:form>
+  </f:section>
+  <f:section name="Main"> 
+      <div class="<f:if condition='{tg1} == 1'>pink-bg</f:if><f:if condition='{tg1} == 2'>white-bg</f:if><f:if condition='{tg1} == 3'>gray-bg</f:if> clearfix">
+          <section class="large-container clearfix">
+            <h2>{Text} 
+                <small>{Text2}</small>
+            </h2>
+            <div class="small-container">
+              <div class="row">
+                <div id="facts" class="owl-carousel owl-theme facts">
+                 <f:if condition="{aslider}">
+                <f:for each="{aslider}" as="sliders" iteration="iteration">
+                  <div class="item">
+                    <div class="col-xs-4">
+                      <span class="facts-number counter">{sliders.ASlider.Text5}</span>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <span class="facts-name text-lowercase"><strong>{sliders.ASlider.Text3}</strong>{sliders.ASlider.Text4}</span>
+                    </div>
+                    <f:if condition="{sliders.ASlider.picture}">
+                    <div class="col-xs-4">
+                      <span class="facts-image">
+                      <f:image src="uploads/slider_images/{sliders.ASlider.picture}" class="img-responsive"/>
+                      </span>
+                    </div>
+                    </f:if>
+                  </div>
+                  </f:for>
+                  </f:if>
+                 
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+
+
+  </f:section>
+</div>

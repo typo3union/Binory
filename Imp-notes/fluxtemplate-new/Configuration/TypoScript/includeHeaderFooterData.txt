@@ -1,0 +1,29 @@
+page.includeCSS {
+    
+    file001 = {$filepaths.css}bootstrap.min.css
+    file002 = {$filepaths.css}style.css
+    file003 = {$filepaths.css}base.css
+    file004 = {$filepaths.css}owl.carousel.css
+    file005 = {$filepaths.css}owl.theme.css
+    
+}
+
+
+page.includeJSFooter {
+    
+    file001 = {$filepaths.js}jquery.min.js
+    file002 = {$filepaths.js}bootstrap.min.js
+    file003 = {$filepaths.js}owl.carousel.js
+    file004 = {$filepaths.js}owl.carousel.min.js
+    file005 = {$filepaths.js}waypoints.min.js
+    file006 = {$filepaths.js}jquery.counterup.min.js
+    file007 = {$filepaths.js}custom.js
+    
+}
+
+page.headerData {
+	10 = TEXT
+	10.value (
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	)
+}

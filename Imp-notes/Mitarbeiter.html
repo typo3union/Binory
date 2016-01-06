@@ -1,0 +1,86 @@
+{namespace v=Tx_Vhs_ViewHelpers}
+{namespace flux=FluidTYPO3\Flux\ViewHelpers}
+
+<f:layout name="Content" />
+
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:flux="http://fedext.net/ns/flux/ViewHelpers"
+     xmlns:v="http://fedext.net/ns/vhs/ViewHelpers"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+    <f:section name="Configuration">
+        <v:var.set name="locallangPath" value="{v:var.typoscript(path: 'lib.locallangPath.value')}" />
+
+        <flux:form id="sliderhome" label="Mitarbeiter" description="Mitarbeiter Element" icon="" options="{Fluidcontent: {sorting: 100},group: 'Custom elements'}">
+            <flux:form.sheet name="options" label="Options">
+                <flux:field.input name="header" label="Titel Mitarbeiter-Abschnitt" />	
+                <flux:form.section name="sliders" label="Mitarbeiter">
+                    <flux:form.object name="slider" label="Neuen Mitarbeiter einfügen">
+                        <flux:field.file name="picture" uploadFolder="uploads/tx_gallery/" label="Mitarbeiter-Bild 870x435" allowed="jpg, jpeg, png, gif"/>						
+                        <flux:field.input name="title" label="Mitarbeiter-Name" />	
+                        <flux:field.text name="textarea" label="Mitarbeiter-Text" enableRichText="1"/>			
+                    </flux:form.object>
+                </flux:form.section>
+            </flux:form.sheet>
+        </flux:form>
+    </f:section>
+
+    <f:section name="Main">	
+        <f:if condition="{sliders}">
+            <div class="item" id="ItemList">  
+
+                <h2 class="interoname"><strong class="name">{header}</strong></h2>                 
+                <ul>
+                    <f:for each="{sliders}" as="slider" iteration="iteration">
+                        <f:if condition='<v:math.modulo a="{iteration.cycle}" b="10" />==0'>
+
+
+                            </ul>
+                            </div>
+                            <div class="item" id="detailItem" style="display:none;"></div>
+                        </div></div></div><div class="item">
+                        <div class="second-slider clearfix">
+
+
+                            <div class="item" id="ItemList2">  
+
+                                <h2 class="interoname"><strong class="name">{header}</strong></h2>                 
+                                <ul>
+
+                                    </f:if>
+                                    <li class="show_{iteration.cycle}" style="height:inherit"><a href="#">
+                                    <f:image src="uploads/tx_gallery/{slider.slider.picture}" height="145" width="290" alt="{slider.slider.title}" />
+                                    </a>
+                                        <div class="hoverimgeffect">
+                                            <button id="slider{iteration.cycle}" class="hoveefct"><f:format.raw>{slider.slider.title}</f:format.raw></button>
+                                        </div>
+
+                                        <div class="hidden_detail" style="display:none"><div class="slider-image-detail showdetail_{iteration.cycle}">
+
+                                                <h2 class="interoname"><strong class="name">{slider.slider.title}</strong></h2>
+                                                <span class="Pefial-img">
+                                                    <button style="color:#f18700; font-size:20px;" aria-label="Close" data-dismiss="modal" class="close meiter-close" type="button"><span aria-hidden="true">&times;</span></button>	
+                                                    <f:image src="uploads/tx_gallery/{slider.slider.picture}" height="435" width="870" alt="{slider.slider.title}" /></span>            
+                                                <div class="image-caption">
+                                                    <f:format.html>{slider.slider.textarea}</f:format.html>
+                                                </div>
+                                            </div></div>
+
+                                    </li>
+
+
+                                    </f:for>						
+                                </ul>
+
+                            </div>
+
+                            <div class="item" id="detailItem" style="display:none;"></div>
+                            <div class="item" id="detailItem2" style="display:none;"></div>
+                        </div></div>
+
+                    </div>
+
+                </f:if>
+                </f:section>
+
+                </div>

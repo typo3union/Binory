@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-09-21T12:31:43Z" product-name="js_event">
+		<header/>
+		<body>
+			<trans-unit id="tx_jsevent_domain_model_event">
+				<source>Event</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.start_date">
+				<source>Start Date</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.end_date">
+				<source>End Date</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.price">
+				<source>Price</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.repetition">
+				<source>Repetition</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.weekly">
+				<source>Weekly</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.week_count">
+				<source>Week Count</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.monthly">
+				<source>Monthly</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.month_on_value">
+				<source>Month On Value</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.every_month_value">
+				<source>Every Month Value</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.month_occurance">
+				<source>Month Occurance</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.months_counts">
+				<source>Months Counts</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.yearly">
+				<source>Yearly</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.every_year_count_value">
+				<source>Every Year Count Value</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.year_occurance">
+				<source>Year Occurance</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.breakup">
+				<source>Breakup</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.insgesamt">
+				<source>Insgesamt</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.ende_am">
+				<source>Ende Am</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.week_day">
+				<source>Week Day</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.weekly_days">
+				<source>Weekly Days</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.month_day">
+				<source>Month Day</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.every_year_month_value">
+				<source>Every Year Month Value</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.year_day">
+				<source>Year Day</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.year_month_value">
+				<source>Year Month Value</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_category.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_category.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_days">
+				<source>Days</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_days.day_name">
+				<source>Day Name</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_months">
+				<source>Months</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_months.month_name">
+				<source>Month Name</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.repetition.I.0">
+				<source>-- Select --</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.repetition.I.1">
+				<source>Wöchentlich</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.repetition.I.2">
+				<source>Monatlich</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.repetition.I.3">
+				<source>Jährlich</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.weekly.I.0">
+				<source>-- Select --</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.weekly.I.1">
+				<source>Jeden</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.weekly.I.2">
+				<source>Alle</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.monthly.I.0">
+				<source>-- Select --</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.monthly.I.1">
+				<source>MonthCounts</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.monthly.I.2">
+				<source>MonthlyDays</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.month_occurance.I.0">
+				<source>-- Select --</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.month_occurance.I.1">
+				<source>First</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.month_occurance.I.2">
+				<source>Second</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.month_occurance.I.3">
+				<source>Third</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.yearly.I.0">
+				<source>-- Select --</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.yearly.I.1">
+				<source>YearCounts</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.yearly.I.2">
+				<source>YearlyDays</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.year_occurance.I.0">
+				<source>-- Select --</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.year_occurance.I.1">
+				<source>First</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.year_occurance.I.2">
+				<source>Second</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.year_occurance.I.3">
+				<source>Third</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.breakup.I.0">
+				<source>-- Select --</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.breakup.I.1">
+				<source>Kein Enddatum</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.breakup.I.2">
+				<source>Insgesamt</source>
+			</trans-unit>
+			<trans-unit id="tx_jsevent_domain_model_event.breakup.I.3">
+				<source>Ende Am</source>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

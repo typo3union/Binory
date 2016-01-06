@@ -1,0 +1,172 @@
+<div class="site-detail">
+          <section class="banner">
+           <f:for each="{project.0.media.banner}" as="picture">
+            <f:image src="{picture.identifier}" class="img-responsive" width="1920c" height="686c"/>
+            </f:for>
+            <div class="banner-logo">
+                <f:for each="{project.0.media.bannerLogo}" as="picture1">
+              <f:image src="{picture1.identifier}" width="497c" height="148c"/>
+              </f:for>
+            </div>
+          </section>        
+          <div class="white-bg">
+            <section class="large-container clearfix">
+              <h2>{project.0.content_header}
+                  <small>{project.0.content_subheader}</small>
+              </h2>
+              <div class="small-container">
+                <div class="row">
+                  <div class="col-sm-12">
+					<f:format.html>{project.0.content_description}</f:format.html>
+                  </div>
+                  <div class="col-sm-6">
+                    <f:format.html>{project.0.content_description1}</f:format.html>
+                  </div>
+                  <div class="col-sm-6">
+                    <f:format.html>{project.0.content_description2}</f:format.html>
+                  </div>
+                  <div class="col-sm-12 m-50">
+                    <f:format.raw>{project.0.content_bullet_list}</f:format.raw>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="pink-bg">
+            <section class="large-container clearfix">
+              <h3>{project.0.content1_header}
+                  <small>{project.0.content1_Subheader}</small>
+              </h3>
+              <div class="small-container">
+                <div class="row">
+                  <div class="col-sm-12">
+                  <f:for each="{project.0.media.content1Image}" as="picture2">
+                  <f:image src="{picture2.identifier}" width="802c" height="679c"/>
+                  </f:for>
+                    
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>          
+          <div class="white-bg">
+            <section class="large-container clearfix">
+              <h3>{project.0.content2_header}
+                  <small>{project.0.content2_subheader}</small>
+              </h3>
+              <div class="small-container">
+                <div class="row">
+                  <div class="col-sm-12">
+                  <f:for each="{project.0.media.content2Image}" as="picture3">
+                  <f:image src="{picture3.identifier}" width="838c" height="666c"/>
+                  </f:for>
+					
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="gray-bg">
+            <section class="large-container clearfix">
+              <h3>{project.0.content3_header}
+                  <small>{project.0.content3_subheader}</small>
+              </h3>
+              <div class="small-container">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div id="smartphone" class="owl-carousel owl-theme smartphone text-center">
+                    <f:for each="{project.0.media.contentSlider}" as="picture4">
+                     <div class="item">
+                        <f:image src="{picture4.identifier}" class="img-responsive" width="349c" height="748c"/>
+                     </div>
+                    </f:for>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="text-center clearfix">
+                    <a href="#" class="btn m-30">mehr über uns</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="white-bg">
+            <section class="large-container clearfix">
+              <h3>{project.0.zitat_header} 
+                  <small>{project.0.zitat_subheader}</small>
+              </h3>
+              <div class="small-container">
+                <div class="row">
+                  <div class="col-sm-7">
+                    <aside class="quote">
+                     <f:format.html>{project.0.zitat_descritpion}</f:format.html>
+                    </aside>
+                    
+                  </div>
+                  <div class="col-sm-5">
+                    <div class="quote-auother">
+                    <f:for each="{project.0.media.zitatImage}" as="picture5">
+                    <f:image src="{picture5.identifier}" width="354c" height="354c"/>
+                    </f:for>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="gray-bg">
+            <section class="large-container clearfix">
+              <h3>{project.0.gallery_header}
+                  <small>{project.0.gallery_subheader}</small>
+              </h3>
+              <div class="small-container">
+                <div class="row">
+              <f:for each="{project.0.media.galleryImages}" as="picture55">
+                    <div class="col-sm-4 col-xs-6 detail-desktop-grid">
+                      <a href="#">
+                      <f:image src="{picture55.identifier}" class="img-responsive" width="302c" height="224c"/>
+                        
+                        <div class="detail-desktop-grid-arrow">
+                          <img src="typo3conf/ext/ext/fluxtemplate/Resources/Public/images/detail-desktop-grid-arrow.png" class="img-responsive" alt="Desktop Greed">
+                        </div>
+                      </a>
+                    </div>
+                    
+                  </f:for>
+                </div>
+                <div class="row">
+                  <div class="text-center clearfix">
+                    <a href="#" class="btn m-30">mehr über uns</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="pink-bg">
+            <section class="large-container clearfix">
+              <h3>{project.0.contact_header}
+                  <small>{project.0.contact_subheader}</small>
+              </h3>
+              <div class="small-container">
+                <div class="row">
+                  <div class="col-sm-7">
+                    <f:for each="{project.0.media.contactImage}" as="picture28">
+                  <f:image src="{picture28.identifier}" class="img-responsive" width="435c" height="435c"/>
+                  </f:for>
+                  </div>
+                  <div class="col-sm-5">
+                    <h4>{project.0.contact_name}</h4>
+                    <p>{project.0.contact_position}</p>
+                    <address>telefon: {project.0.contact_telephone}</address>
+                    <address>mail: {project.0.contact_email}</address>
+                    <a href="mailto:{project.0.contact_email}" class="btn m-50">mail an fabian schmid</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          </div>
+          

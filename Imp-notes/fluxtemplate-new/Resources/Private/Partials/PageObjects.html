@@ -1,0 +1,83 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+<f:section name="Header">
+  <header class="header main-header navbar-fixed-top">
+        <section class="large-container clearfix">
+          <aside class="header-left pull-left">
+            <div class="navbar-brand">
+             
+               <f:link.page pageUid="1"><img class="logo-dark" src="{f:cObject(typoscriptObjectPath: 'lib.mainLogo')}" alt="1" />
+                <img class="logo-white" src="{f:cObject(typoscriptObjectPath: 'lib.mainLogo2')}" alt="1" /></f:link.page>
+              
+            </div>            
+            <ul class="list-unstyled list-inline">
+              <li>
+                <a href="#" class="dark"><img src="typo3conf/ext/fluxtemplate/Resources/Public/images/dark-map1.png" alt="map"></a>
+                <a href="#" class="red"><img src="typo3conf/ext/fluxtemplate/Resources/Public/images/red-map1.png" alt="map"></a>
+                <a href="#" class="white"><img src="typo3conf/ext/fluxtemplate/Resources/Public/images/white-map1.png" alt="map"></a>
+                <ul class="list-unstyled list-inline address">
+                  <li><a href="#">kempten</a></li>
+                  <li><a href="#">deutschland</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="dark"><img src="typo3conf/ext/fluxtemplate/Resources/Public/images/dark-map2.png" alt="map"></a>
+                <a href="#" class="red"><img src="typo3conf/ext/fluxtemplate/Resources/Public/images/red-map2.png" alt="map"></a>
+                <a href="#" class="white"><img src="typo3conf/ext/fluxtemplate/Resources/Public/images/white-map2.png" alt="map"></a>
+                <ul class="list-unstyled list-inline address">
+                  <li><a href="#">leibnitz</a></li>
+                  <li><a href="#">österreich</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="dark"><img src="typo3conf/ext/fluxtemplate/Resources/Public/images/dark-map3.png" alt="map"></a>
+                <a href="#" class="red"><img src="typo3conf/ext/fluxtemplate/Resources/Public/images/red-map3.png" alt="map"></a>
+                <a href="#" class="white"><img src="typo3conf/ext/fluxtemplate/Resources/Public/images/white-map3.png" alt="map"></a>
+                <ul class="list-unstyled list-inline address">
+                  <li><a href="#">ahmedabad</a></li>
+                  <li><a href="#">indien</a></li>
+                </ul>
+              </li>
+            </ul>
+          </aside>
+          <aside class="header-right pull-right">
+            <ul class="list-unstyled list-inline">
+              <li>menü</li>
+              <li>
+                <a href="javascript:void(0);" class="main-menu">
+                  <img src="typo3conf/ext/fluxtemplate/Resources/Public/images/menu-line.png" class="menu-line" alt="menu">
+                  <img src="typo3conf/ext/fluxtemplate/Resources/Public/images/menu-cross.png" class="menu-cross" alt="menu">
+                </a>
+              </li>
+            </ul>
+          </aside>
+           <f:render section="Navigation" partial="Navigation" arguments="{_all}"/>
+        </section>
+      </header>
+</f:section>
+
+
+
+
+
+<f:section name="Footer">
+ 
+   <footer class="footer">
+        <section class="large-container clearfix">
+          <div class="row">
+            <div class="col-sm-6 footer-left">
+               <f:cObject typoscriptObjectPath="lib.footermenu" />
+              <p><f:cObject typoscriptObjectPath="lib.copyRightText" /></p>
+            </div>
+            <div class="col-sm-6 text-right social">
+              <f:cObject typoscriptObjectPath="content.socialbutton" />
+            </div>
+          </div>
+        </section>
+      </footer>
+    
+</f:section>
+</div>

@@ -1,0 +1,15 @@
+
+plugin.tx_project_project {
+	view {
+		# cat=plugin.tx_project_project/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:project/Resources/Private/Templates/
+		# cat=plugin.tx_project_project/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:project/Resources/Private/Partials/
+		# cat=plugin.tx_project_project/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:project/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_project_project//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

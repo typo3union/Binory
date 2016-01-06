@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-30T09:25:59Z" product-name="video">
+		<header/>
+		<body>
+			<trans-unit id="tx_video_domain_model_videos">
+				<source>Videos</source>
+			</trans-unit>
+			<trans-unit id="tx_video_domain_model_videos.upload_video">
+				<source>Upload Video</source>
+			</trans-unit>
+			<trans-unit id="tx_video_domain_model_videos.alttag">
+				<source>Alttag</source>
+			</trans-unit>
+			<trans-unit id="tx_video_domain_model_videos.background_image">
+				<source>Background Image</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

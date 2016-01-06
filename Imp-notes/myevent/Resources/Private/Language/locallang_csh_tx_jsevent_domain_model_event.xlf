@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-09-21T12:31:43Z" product-name="js_event">
+		<header/>
+		<body>
+			<trans-unit id="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="start_date.description">
+				<source>startDate</source>
+			</trans-unit>
+			<trans-unit id="end_date.description">
+				<source>endDate</source>
+			</trans-unit>
+			<trans-unit id="location.description">
+				<source>location</source>
+			</trans-unit>
+			<trans-unit id="price.description">
+				<source>price</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="image.description">
+				<source>image</source>
+			</trans-unit>
+			<trans-unit id="repetition.description">
+				<source>repetition</source>
+			</trans-unit>
+			<trans-unit id="weekly.description">
+				<source>weekly</source>
+			</trans-unit>
+			<trans-unit id="week_count.description">
+				<source>weekCount</source>
+			</trans-unit>
+			<trans-unit id="monthly.description">
+				<source>monthly</source>
+			</trans-unit>
+			<trans-unit id="month_on_value.description">
+				<source>monthOnValue</source>
+			</trans-unit>
+			<trans-unit id="every_month_value.description">
+				<source>everyMonthValue</source>
+			</trans-unit>
+			<trans-unit id="month_occurance.description">
+				<source>monthOccurance</source>
+			</trans-unit>
+			<trans-unit id="months_counts.description">
+				<source>monthsCounts</source>
+			</trans-unit>
+			<trans-unit id="yearly.description">
+				<source>yearly</source>
+			</trans-unit>
+			<trans-unit id="every_year_count_value.description">
+				<source>everyYearCountValue</source>
+			</trans-unit>
+			<trans-unit id="year_occurance.description">
+				<source>yearOccurance</source>
+			</trans-unit>
+			<trans-unit id="breakup.description">
+				<source>breakup</source>
+			</trans-unit>
+			<trans-unit id="insgesamt.description">
+				<source>insgesamt</source>
+			</trans-unit>
+			<trans-unit id="ende_am.description">
+				<source>endeAm</source>
+			</trans-unit>
+			<trans-unit id="category.description">
+				<source>category</source>
+			</trans-unit>
+			<trans-unit id="week_day.description">
+				<source>weekDay</source>
+			</trans-unit>
+			<trans-unit id="weekly_days.description">
+				<source>weeklyDays</source>
+			</trans-unit>
+			<trans-unit id="month_day.description">
+				<source>monthDay</source>
+			</trans-unit>
+			<trans-unit id="every_year_month_value.description">
+				<source>everyYearMonthValue</source>
+			</trans-unit>
+			<trans-unit id="year_day.description">
+				<source>yearDay</source>
+			</trans-unit>
+			<trans-unit id="year_month_value.description">
+				<source>yearMonthValue</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

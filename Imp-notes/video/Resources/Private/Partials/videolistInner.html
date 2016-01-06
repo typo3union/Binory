@@ -1,0 +1,38 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+<f:debug>{videolistInner}</f:debug>
+<f:if condition="{videolistInner}">
+<f:then>
+	<div class="newsbox height">
+		<f:if condition="{videolistInner.alttag}">
+		<f:then>
+			<h4><f:format.crop maxCharacters="50" respectWordBoundaries="false">{videolistInner.alttag}</f:format.crop></h4>
+		</f:then>		
+		</f:if>
+		
+		<div class="v-image">
+		<f:if condition="{videolistInner.imageReference}">
+		<f:then>
+			<f:image src="{videolistInner.imageReference}" alt="{videolistInner.alttag}" class="img-responsive" treatIdAsReference="1" width="267c" height="301c" />
+		</f:then>
+		<f:else>			
+			<f:image src="EXT:bridge_videos/Resources/Public/Images/dummy_image.jpg" alt="{videolistInner.alttag}" class="img-responsive" width="267c" height="301c" />
+		</f:else>
+		</f:if>
+		</div>
+		
+		<div class="video-play">
+			<div class="vlink">
+				<f:if condition="{videolistInner.upload_video}">
+					<f:then>
+						<a href="{videolistInner.upload_video}" class="html5lightbox">
+							<f:image src="EXT:bridge_videos/Resources/Public/Images/video-play.png" alt="{videolistInner.alttag}" additionalAttributes="{class: 'img-responsive'}" width="124c" height="124c" />
+						</a>
+					</f:then>
+					
+				</f:if>
+			</div>
+		</div>
+		
+	</div>
+</f:then>
+</f:if>

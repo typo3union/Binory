@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-12-31T07:33:02Z" product-name="project">
+		<header/>
+		<body>
+			<trans-unit id="banner.description">
+				<source>banner</source>
+			</trans-unit>
+			<trans-unit id="banner_logo.description">
+				<source>bannerLogo</source>
+			</trans-unit>
+			<trans-unit id="content_header.description">
+				<source>contentHeader</source>
+			</trans-unit>
+			<trans-unit id="content_subheader.description">
+				<source>contentSubheader</source>
+			</trans-unit>
+			<trans-unit id="content_description.description">
+				<source>contentDescription</source>
+			</trans-unit>
+			<trans-unit id="content_description1.description">
+				<source>contentDescription1</source>
+			</trans-unit>
+			<trans-unit id="content_description2.description">
+				<source>contentDescription2</source>
+			</trans-unit>
+			<trans-unit id="content_bullet_list.description">
+				<source>contentBulletList</source>
+			</trans-unit>
+			<trans-unit id="content1_header.description">
+				<source>content1Header</source>
+			</trans-unit>
+			<trans-unit id="content1_subheader.description">
+				<source>content1Subheader</source>
+			</trans-unit>
+			<trans-unit id="content1_image.description">
+				<source>content1Image</source>
+			</trans-unit>
+			<trans-unit id="content2_header.description">
+				<source>content2Header</source>
+			</trans-unit>
+			<trans-unit id="content2_subheader.description">
+				<source>content2Subheader</source>
+			</trans-unit>
+			<trans-unit id="content2_image.description">
+				<source>content2Image</source>
+			</trans-unit>
+			<trans-unit id="content3_header.description">
+				<source>content3Header</source>
+			</trans-unit>
+			<trans-unit id="content3_subheader.description">
+				<source>content3Subheader</source>
+			</trans-unit>
+			<trans-unit id="content_slider.description">
+				<source>contentSlider</source>
+			</trans-unit>
+			<trans-unit id="slider_link.description">
+				<source>sliderLink</source>
+			</trans-unit>
+			<trans-unit id="zitat_header.description">
+				<source>zitatHeader</source>
+			</trans-unit>
+			<trans-unit id="zitat_subheader.description">
+				<source>zitatSubheader</source>
+			</trans-unit>
+			<trans-unit id="zitat_descritpion.description">
+				<source>zitatDescritpion</source>
+			</trans-unit>
+			<trans-unit id="zitat_image.description">
+				<source>zitatImage</source>
+			</trans-unit>
+			<trans-unit id="gallery_header.description">
+				<source>galleryHeader</source>
+			</trans-unit>
+			<trans-unit id="gallery_subheader.description">
+				<source>gallerySubheader</source>
+			</trans-unit>
+			<trans-unit id="gallery_images.description">
+				<source>galleryImages</source>
+			</trans-unit>
+			<trans-unit id="contact_subheader.description">
+				<source>contactSubheader</source>
+			</trans-unit>
+			<trans-unit id="gallery_link.description">
+				<source>galleryLink</source>
+			</trans-unit>
+			<trans-unit id="contact_header.description">
+				<source>contactHeader</source>
+			</trans-unit>
+			<trans-unit id="contact_name.description">
+				<source>contactName</source>
+			</trans-unit>
+			<trans-unit id="contact_position.description">
+				<source>contactPosition</source>
+			</trans-unit>
+			<trans-unit id="contact_telephone.description">
+				<source>contactTelephone</source>
+			</trans-unit>
+			<trans-unit id="contact_email.description">
+				<source>contactEmail</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
